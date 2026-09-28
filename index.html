@@ -14,9 +14,16 @@
 <meta property="og:title" content="The Gen X Factor: find the women who get it">
 <meta property="og:description" content="A new network where Gen X women find each other to hire, work and build. Starting small, built with founding members.">
 <meta property="og:url" content="https://thegenxfactor.com/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://thegenxfactor.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Gen X Factor: Find the women who get it. Two paths crossing at one point.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thegenxfactor.com/og-image.png">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231D2430'/%3E%3Cpath d='M9 9l14 14M23 9L9 23' stroke='%23E8EBE8' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23C98A9A'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +43,9 @@
       "foundingLocation": "Michigan, United States",
       "founder": {
         "@id": "https://thegenxfactor.com/#founder"
-      }
+      },
+      "logo": "https://thegenxfactor.com/icon-512.png",
+      "image": "https://thegenxfactor.com/og-image.png"
     },
     {
       "@type": "Person",
@@ -69,7 +78,13 @@
         "@id": "https://thegenxfactor.com/#org"
       },
       "datePublished": "2026-09-24",
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-24",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://thegenxfactor.com/og-image.png",
+        "width": 1200,
+        "height": 630
+      }
     },
     {
       "@type": "FAQPage",
@@ -103,7 +118,15 @@
           "name": "Does it cost anything?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. It's free for founding members while we learn what's most useful. You fill out one short form, we look for good matches and we reach out by email."
+            "text": "No. It's free for founding members. You fill out one short form, get an invite to our private Slack and we start matching you with women who fit what you're looking for."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I get when I join?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two things. First, an invite to our private Slack, where members hire each other, find project work and trade advice. Second, personal introductions. We read every form and match you with women on the same path, whether you are hiring, looking for work or building something."
           }
         },
         {
@@ -111,7 +134,7 @@
           "name": "Is this another app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. There's nothing to download and no feed to scroll. You fill out one short form that takes about three minutes and we'll be in touch by email when we see a match or a small group that makes sense for you."
+            "text": "No. There's no new app to learn. Members get an invite to a private Slack where Gen X women post gigs, ask for help and share wins. We also make introductions by hand when we see a strong match for you."
           }
         },
         {
@@ -204,6 +227,19 @@ p{margin:0 0 1em}
 .xmark .end{fill:var(--fog);stroke:var(--ink);stroke-width:1.4}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes meet{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+
+/* join perks */
+.join-perks{background:var(--moss);color:var(--fog);padding:clamp(3.5rem,7vw,5.5rem) 0}
+.perks-eyebrow{font-family:var(--sans);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:#CFE0D4;margin:0 0 .75rem}
+.join-perks h2{color:var(--fog);max-width:20ch}
+.perks{list-style:none;margin:2.5rem 0 2.5rem;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3rem)}
+.perks li{border-top:1px solid rgba(232,235,232,.35);padding-top:1.25rem}
+.perk-num{display:block;font-family:var(--sans);font-size:.9rem;color:#CFE0D4;margin-bottom:.75rem}
+.perks h3{color:var(--fog)}
+.perks p{margin:.5rem 0 0;color:#DDE7E0;font-size:1.05rem;line-height:1.55}
+.btn-light{background:var(--fog);color:var(--ink)}
+.btn-light:hover{background:#fff}
+@media (max-width:860px){.perks{grid-template-columns:1fr}}
 
 /* story */
 .story{background:var(--paper);padding:clamp(4rem,8vw,6.5rem) 0}
@@ -308,7 +344,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <p class="lede">The Gen X Factor connects Gen X women who've left corporate, been laid off, started something or want to. Hire each other, work together and build what's next.</p>
       <div class="actions">
         <a class="btn" href="#paths">Find your people</a>
-        <p class="aside-note">No app. No feed. Just women who get it.</p>
+        <p class="aside-note">Free for founding members. Includes our private Slack.</p>
       </div>
     </div>
 
@@ -330,6 +366,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
         <circle cx="200" cy="200" r="7" fill="#8C4A5A"/>
       </g>
     </svg>
+  </div>
+</section>
+
+<section class="join-perks" aria-labelledby="perks-title">
+  <div class="wrap">
+    <p class="perks-eyebrow">When you join</p>
+    <h2 id="perks-title">You get matched and you get a room.</h2>
+    <ul class="perks">
+      <li><span class="perk-num">01</span><h3>Matched by hand</h3><p>We read every form and introduce you to women who fit: someone hiring, someone with the skills you need or a partner on the same path.</p></li>
+      <li><span class="perk-num">02</span><h3>A private Slack</h3><p>Every member gets an invite to our private Slack to post gigs, ask the room and share wins with women who get it.</p></li>
+      <li><span class="perk-num">03</span><h3>Founding member calls</h3><p>Small video calls with women on your path. Founding members hear about them first.</p></li>
+    </ul>
+    <a class="btn btn-light" href="#paths">Join and get matched</a>
   </div>
 </section>
 
@@ -405,8 +454,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
     <h2 id="how-title">How it works</h2>
     <ol>
       <li><h3>Tell us where you are</h3><p>One short form. About three minutes.</p></li>
-      <li><h3>We look for good fits</h3><p>When we see a match or a small group that makes sense, we'll reach out by email. We're starting small, so it may take some time.</p></li>
-      <li><h3>You take it from there</h3><p>Coffee, a call, a project, a company. That part's yours.</p></li>
+      <li><h3>Get your Slack invite</h3><p>Within 48 hours you'll get a personal email with your invite to our private Slack.</p></li>
+      <li><h3>Get matched</h3><p>We introduce you to women who fit what you're looking for. Coffee, a call, a project or a company: that part's yours.</p></li>
     </ol>
   </div>
 </section>
@@ -418,8 +467,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <details><summary>What is The Gen X Factor?</summary><p>The Gen X Factor is a new network where Gen X women find each other for hiring, freelance and fractional work, co-founding, career changes and peer support. It was started in 2026 in Michigan. We're starting small and building it with our founding members, one introduction at a time.</p></details>
       <details><summary>Why focus on Gen X women?</summary><p>Because this is the group carrying the most at once: aging parents, kids at home or in college, late-career layoffs, a job market reshaped by AI and menopause, often all in the same year. Gen X women have decades of experience and are often overlooked for it. They are also the people most likely to understand each other.</p></details>
       <details><summary>Who is it for?</summary><p>It's for women born roughly between 1965 and 1980 who are building a business, looking for work, changing careers or looking for peers who share their references and their reality. Many have left corporate jobs or been laid off and want to put decades of experience to work.</p></details>
-      <details><summary>Does it cost anything?</summary><p>No. It's free for founding members while we learn what's most useful. You fill out one short form, we look for good matches and we reach out by email.</p></details>
-      <details><summary>Is this another app?</summary><p>No. There's nothing to download and no feed to scroll. You fill out one short form that takes about three minutes and we'll be in touch by email when we see a match or a small group that makes sense for you.</p></details>
+      <details><summary>Does it cost anything?</summary><p>No. It's free for founding members. You fill out one short form, get an invite to our private Slack and we start matching you with women who fit what you're looking for.</p></details>
+      <details><summary>What do I get when I join?</summary><p>Two things. First, an invite to our private Slack, where members hire each other, find project work and trade advice. Second, personal introductions. We read every form and match you with women on the same path, whether you are hiring, looking for work or building something.</p></details>
+      <details><summary>Is this another app?</summary><p>No. There's no new app to learn. Members get an invite to a private Slack where Gen X women post gigs, ask for help and share wins. We also make introductions by hand when we see a strong match for you.</p></details>
       <details><summary>Will there be group calls?</summary><p>We're planning small video calls for women on the same path: hiring and freelance work, building something or changing careers. Founding members will hear about them first.</p></details>
       <details><summary>What happens to my information?</summary><p>It's used only to make introductions. We share your details with a match only after you say yes and we never sell them.</p></details>
     </div>
@@ -429,8 +479,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 <section class="close">
   <div class="wrap">
     <h2>Your people are out here.</h2>
-    <p>Tell us what you're looking for and we'll be in touch.</p>
-    <a class="btn" href="#paths">Find your people</a>
+    <p>Tell us what you're looking for. We'll send your private Slack invite and start matching you.</p>
+    <a class="btn" href="#paths">Join and get matched</a>
   </div>
 </section>
 
