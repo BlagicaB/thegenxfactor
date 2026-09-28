@@ -1,6 +1,6 @@
 # The Gen X Factor
 
-> The Gen X Factor is a new network where Gen X women (born roughly 1965 to 1980) find each other to hire, work and build. It connects women who've left corporate, been laid off, started something or want to. Founded in 2026 in Michigan by Blagica Bottigliero. Free for founding members.
+> The Gen X Factor is a new network where Gen X women (born roughly 1965 to 1980) find each other to hire, work and build. It connects women who've left corporate, been laid off, started something or want to. Founded in 2026 in Michigan by Blagica Bottigliero. Members get a private Slack and personal introductions.
 
 ## What members can do
 - Hire experienced Gen X women: designers, marketers, operators and finance people
