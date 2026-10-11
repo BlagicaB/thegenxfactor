@@ -208,6 +208,7 @@ p{margin:0 0 1em}
 }
 .btn:hover{background:var(--moss-deep)}
 .aside-note{font-family:var(--sans);font-size:.95rem;color:var(--ink-soft);max-width:22ch;line-height:1.4;margin:0}
+.aside-note a{display:inline-block;margin-top:.35rem;color:var(--mulberry);font-weight:600}
 
 /* the X */
 .xmark{width:100%;max-width:460px;justify-self:end}
@@ -231,6 +232,11 @@ p{margin:0 0 1em}
 .perks p{margin:.5rem 0 0;color:#DDE7E0;font-size:1.05rem;line-height:1.55}
 .btn-light{background:var(--fog);color:var(--ink)}
 .btn-light:hover{background:#fff}
+.welcome-callout{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem 2.5rem;background:rgba(232,235,232,.1);border:1px solid rgba(232,235,232,.35);border-left:4px solid var(--blush);border-radius:6px;padding:1.75rem clamp(1.25rem,3vw,2.25rem)}
+.welcome-callout > div{flex:1 1 32ch}
+.welcome-kicker{font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,1.75rem);line-height:1.2;color:var(--fog);margin:0 0 .5rem}
+.welcome-text{margin:0;color:#DDE7E0;font-size:1.05rem;line-height:1.55;max-width:60ch}
+.welcome-callout .btn{flex:0 0 auto}
 @media (max-width:860px){.perks{grid-template-columns:1fr}}
 
 /* story */
@@ -323,7 +329,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#1D2430"/><path d="M9 9l14 14M23 9L9 23" stroke="#E8EBE8" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="16" r="3" fill="#C98A9A"/></svg>
       The Gen X Factor
     </a>
-    <nav aria-label="Primary"><a href="#paths">Join</a></nav>
+    <nav aria-label="Primary"><a href="https://tally.so/r/xXKygy">Join</a></nav>
   </div>
 </header>
 
@@ -336,7 +342,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <p class="lede">The Gen X Factor connects Gen X women who've left corporate, been laid off, started something or want to. Hire each other, work together and build what's next.</p>
       <div class="actions">
         <a class="btn" href="#paths">Find your people</a>
-        <p class="aside-note">Three minutes to join. Includes our private Slack.</p>
+        <p class="aside-note">Three minutes to join. Includes our private Slack. <a href="https://tally.so/r/xXKygy">Go straight to the form</a></p>
       </div>
     </div>
 
@@ -370,7 +376,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <li><span class="perk-num">02</span><h3>A private Slack</h3><p>Every member gets an invite to our private Slack to post gigs, ask the room and share wins with women who get it.</p></li>
       <li><span class="perk-num">03</span><h3>Small group calls</h3><p>Video calls with women on your path, announced first in Slack.</p></li>
     </ul>
-    <a class="btn btn-light" href="#paths">Join and get matched</a>
+    <div class="welcome-callout">
+      <div>
+        <p class="welcome-kicker">Welcome. You found your people.</p>
+        <p class="welcome-text">Come as you are. Laid off last month, freelancing for years or still figuring it out, there's a seat here for you. Skip the scroll and go straight to the form. It takes about three minutes and your Slack invite follows within 48 hours.</p>
+      </div>
+      <a class="btn btn-light" href="https://tally.so/r/xXKygy">Fill out the form <span aria-hidden="true">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -471,7 +483,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   <div class="wrap">
     <h2>Your people are out here.</h2>
     <p>Tell us what you're looking for. We'll send your private Slack invite and start matching you.</p>
-    <a class="btn" href="#paths">Join and get matched</a>
+    <a class="btn" href="https://tally.so/r/xXKygy">Join and get matched</a>
   </div>
 </section>
 
