@@ -78,7 +78,7 @@
         "@id": "https://thegenxfactor.com/#org"
       },
       "datePublished": "2026-09-24",
-      "dateModified": "2026-09-24",
+      "dateModified": "2026-11-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://thegenxfactor.com/og-image.png",
@@ -193,6 +193,7 @@ p{margin:0 0 1em}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--sans);font-weight:600;font-size:1.05rem;text-decoration:none;letter-spacing:-.01em}
 .brand svg{width:26px;height:26px}
+.top nav{display:flex;gap:1.5rem}
 .top nav a{font-family:var(--sans);font-size:.95rem;text-decoration:none;color:var(--ink-soft)}
 .top nav a:hover{color:var(--ink)}
 
@@ -304,6 +305,20 @@ details p{margin:.8rem 0 0;color:var(--ink-soft);max-width:58ch}
 footer{border-top:1px solid var(--rule);padding:2rem 0;font-family:var(--sans);font-size:.9rem;color:var(--ink-soft)}
 footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 
+/* from the blog */
+.from-blog{padding:clamp(4rem,8vw,6.5rem) 0;border-top:1px solid var(--rule)}
+.blog-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap}
+.blog-head a{font-family:var(--sans);font-size:.95rem;color:var(--mulberry);font-weight:600}
+.blog-cards{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3rem)}
+.blog-cards li{border-top:2px solid var(--ink);padding-top:1.25rem}
+.blog-cards a{text-decoration:none}
+.blog-cards a:hover h3{color:var(--moss)}
+.blog-cards p{color:var(--ink-soft);margin:.6rem 0 0;font-size:1.05rem;line-height:1.5}
+footer nav{display:flex;gap:1.25rem}
+footer nav a{color:var(--ink-soft);text-decoration:none}
+footer nav a:hover{color:var(--ink)}
+@media (max-width:860px){.blog-cards{grid-template-columns:1fr}}
+
 @media (max-width:860px){
   .hero .wrap,.story .wrap,.faq .wrap,.why .wrap{grid-template-columns:1fr}
   .why-close{grid-column:1}
@@ -329,7 +344,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
       <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#1D2430"/><path d="M9 9l14 14M23 9L9 23" stroke="#E8EBE8" stroke-width="2.2" stroke-linecap="round"/><circle cx="16" cy="16" r="3" fill="#C98A9A"/></svg>
       The Gen X Factor
     </a>
-    <nav aria-label="Primary"><a href="https://tally.so/r/xXKygy">Join</a></nav>
+    <nav aria-label="Primary"><a href="/blog/">Blog</a><a href="https://tally.so/r/xXKygy">Join</a></nav>
   </div>
 </header>
 
@@ -479,6 +494,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
   </div>
 </section>
 
+<section class="from-blog" aria-labelledby="blog-title">
+  <div class="wrap">
+    <div class="blog-head">
+      <h2 id="blog-title">From the blog</h2>
+      <a href="/blog/">All posts &rarr;</a>
+    </div>
+    <ul class="blog-cards">
+      <li><a href="/blog/why-i-built-the-gen-x-factor/"><h3>I'm Tired of Reading Reports About Us. So I Built Something.</h3><p>Why I started The Gen X Factor, and what I've learned from the women who joined.</p></a></li>
+      <li><a href="/blog/gen-x-women-work-network/"><h3>The Missing Room: Why Gen X Women Need a Network Built Around Work</h3><p>Great places exist to laugh and vent. There was no place built around what comes next at work.</p></a></li>
+      <li><a href="/blog/network-moat-gen-x-women/"><h3>Why Your Network Is Your Moat After 50</h3><p>Tools change every year. Who you know, and who knows you, is what lasts.</p></a></li>
+    </ul>
+  </div>
+</section>
+
 <section class="close">
   <div class="wrap">
     <h2>Your people are out here.</h2>
@@ -492,6 +521,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>© 2026 The Gen X Factor</span>
+    <nav aria-label="Footer"><a href="/blog/">Blog</a><a href="https://tally.so/r/xXKygy">Join</a></nav>
   </div>
 </footer>
 </body>
